@@ -1,0 +1,91 @@
+[
+    {
+      "name": "MediBlend Pharmacy",
+      "items": [
+        {"item": "Aspirin", "quantity": "100 tablets", "price": "$5.99"},
+        {"item": "Ibuprofen", "quantity": "50 tablets", "price": "$3.49"},
+        {"item": "Benadryl Allergy", "quantity": "24 tablets", "price": "$7.99"},
+        {"item": "Band-Aid assorted sizes", "quantity": "20 count", "price": "$2.99"},
+        {"item": "Pepto-Bismol", "quantity": "12 oz", "price": "$6.49"},
+        {"item": "Vitamin C", "quantity": "1000mg, 100 tablets", "price": "$8.99"},
+        {"item": "Hydrogen Peroxide", "quantity": "16 oz", "price": "$1.99"},
+        {"item": "Thermometer (digital)", "quantity": null, "price": "$9.99"},
+        {"item": "Hand Sanitizer", "quantity": "8 oz", "price": "$3.99"},
+        {"item": "Facial Tissues", "quantity": "box of 100", "price": "$1.49"}
+      ]
+    },
+    {
+      "name": "WellnessRX",
+      "items": [
+        {"item": "Claritin Allergy", "quantity": "30 tablets", "price": "$15.99"},
+        {"item": "Tylenol Extra Strength", "quantity": "50 tablets", "price": "$7.49"},
+        {"item": "Pepto-Bismol", "quantity": "12 oz", "price": "$6.99"},
+        {"item": "Neosporin Ointment", "quantity": "1 oz", "price": "$5.99"},
+        {"item": "Band-Aid assorted sizes", "quantity": "30 count", "price": "$3.99"},
+        {"item": "Antacid Tablets", "quantity": "100 count", "price": "$4.99"},
+        {"item": "Hand Sanitizer", "quantity": "16 oz", "price": "$4.49"},
+        {"item": "Vitamin D3", "quantity": "1000 IU, 100 tablets", "price": "$6.99"},
+        {"item": "Facial Tissues", "quantity": "box of 150", "price": "$2.49"},
+        {"item": "Rubbing Alcohol", "quantity": "16 oz", "price": "$1.99"}
+      ]
+    },
+    {
+      "name": "HealthHarbor Pharmacy",
+      "items": [
+        {"item": "Aleve Pain Reliever", "quantity": "100 tablets", "price": "$8.99"},
+        {"item": "Zyrtec Allergy", "quantity": "30 tablets", "price": "$18.99"},
+        {"item": "Breathe Right Nasal Strips", "quantity": "26 count", "price": "$11.49"},
+        {"item": "Epsom Salt", "quantity": "2 lbs", "price": "$3.99"},
+        {"item": "Hydrogen Peroxide", "quantity": "32 oz", "price": "$2.49"},
+        {"item": "Cold/Hot Pack", "quantity": null, "price": "$5.99"},
+        {"item": "Vitamin B Complex", "quantity": "100 tablets", "price": "$9.99"},
+        {"item": "Hand Sanitizer", "quantity": "10 oz", "price": "$2.99"},
+        {"item": "Cotton Balls", "quantity": "200 count", "price": "$1.99"},
+        {"item": "Alcohol Swabs", "quantity": "100 count", "price": "$3.49"}
+      ]
+    },
+    {
+      "name": "CureQuest Pharmacy",
+      "items": [
+        {"item": "Advil Pain Reliever", "quantity": "50 tablets", "price": "$6.99"},
+        {"item": "Allegra Allergy", "quantity": "30 tablets", "price": "$17.99"},
+        {"item": "Preparation H Cream", "quantity": "1 oz", "price": "$8.49"},
+        {"item": "Benadryl Itch Relief Cream", "quantity": "1 oz", "price": "$5.99"},
+        {"item": "Vitamin E Oil", "quantity": "2 oz", "price": "$7.99"},
+        {"item": "Hand Sanitizer Spray", "quantity": "4 oz", "price": "$3.49"},
+        {"item": "Antiseptic Wipes", "quantity": "50 count", "price": "$4.99"},
+        {"item": "Lip Balm (SPF 15)", "quantity": null, "price": "$2.49"},
+        {"item": "Disposable Gloves", "quantity": "20 count", "price": "$3.99"},
+        {"item": "Eye Drops", "quantity": "0.5 oz", "price": "$6.49"}
+      ]
+    },
+    {
+      "name": "VitalityVista Pharmacy",
+      "items": [
+        {"item": "Motrin IB Pain Reliever", "quantity": "50 tablets", "price": "$5.99"},
+        {"item": "Allegra-D Allergy & Congestion", "quantity": "20 tablets", "price": "$24.99"},
+        {"item": "Nicotine Gum", "quantity": "100 pieces", "price": "$29.99"},
+        {"item": "Bandaids assorted sizes", "quantity": "40 count", "price": "$4.99"},
+        {"item": "Antiseptic Mouthwash", "quantity": "16 oz", "price": "$3.49"},
+        {"item": "Hand Sanitizer Gel", "quantity": "12 oz", "price": "$4.99"},
+        {"item": "Multivitamin for Men/Women", "quantity": "100 tablets", "price": "$10.99"},
+        {"item": "First Aid Tape (1 inch x 10 yards)", "quantity": null, "price": "$2.99"},
+        {"item": "Cotton Swabs", "quantity": "300 count", "price": "$2.49"},
+        {"item": "Disposable Face Masks", "quantity": "10 count", "price": "$6.99"}
+      ]
+    },
+    {
+  "name": "RemedyReach Pharmacy",
+  "items": [
+    {"item": "Tylenol PM", "quantity": "50 caplets", "price": "$7.99"},
+    {"item": "Flonase Allergy Relief", "quantity": "60 sprays", "price": "$14.99"},
+    {"item": "Tums Antacid", "quantity": "150 tablets", "price": "$9.99"},
+    {"item": "Neosporin + Pain Relief", "quantity": "0.5 oz", "price": "$7.49"},
+    {"item": "Calamine Lotion", "quantity": "6 oz", "price": "$4.99"},
+    {"item": "Hand Sanitizer Wipes", "quantity": "30 count", "price": "$3.49"},
+    {"item": "Thermometer (oral)", "quantity": null, "price": "$8.99"},
+    {"item": "Vitamin B12", "quantity": "1000mcg, 100 tablets", "price": "$7.99"},
+    {"item": "Aloe Vera Gel", "quantity": "8 oz", "price": "$5.49"},
+    {"item": "Disposable Masks", "quantity": "pack of 50", "price": "$24.99"}
+  ]
+}]
