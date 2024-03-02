@@ -2,16 +2,14 @@ const mongoose = require("mongoose");
 
 const app = require("./index");
 
-const { DB_HOST } = process.env;
+const { DB_HOST, PORT } = process.env;
 
 mongoose.set("strictQuery", true);
-
-const port = 3001;
 
 mongoose
   .connect(DB_HOST)
   .then(
-    app.listen(port, () => {
+    app.listen(PORT, () => {
       console.log(`App listening on port ${port}!`);
     })
   )
