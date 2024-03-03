@@ -2,8 +2,6 @@ const { Schema, model } = require("mongoose");
 const Joi = require("joi");
 const handleMongooseError = require("../middlewares/handleMongooseError");
 
-const { medicineSchema } = require("./storeModel");
-
 const orderSchema = new Schema(
   {
     name: {
@@ -26,10 +24,30 @@ const orderSchema = new Schema(
       type: Number,
       required: true,
     },
-    medicines: {
-      type: [medicineSchema],
-      required: true,
-    },
+    medicines: [
+      {
+        _id: {
+          type: String,
+          required: true,
+        },
+        item: {
+          type: String,
+          required: true,
+        },
+        quantity: {
+          type: String,
+          required: true,
+        },
+        price: {
+          type: Number,
+          required: true,
+        },
+        amount: {
+          type: Number,
+          required: true,
+        },
+      },
+    ],
   },
   { versionKey: false }
 );
@@ -55,9 +73,11 @@ const validateBodyOrder = Joi.object({
   medicines: Joi.array()
     .items(
       Joi.object({
+        _id: Joi.string().required(),
         item: Joi.string().required(),
         quantity: Joi.string().required(),
-        price: Joi.string().required(),
+        price: Joi.number().required(),
+        amount: Joi.number().required(),
       })
     )
     .required(),
