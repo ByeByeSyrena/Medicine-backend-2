@@ -2,7 +2,6 @@
     {
       "name": "MediBlend Pharmacy",
       "items": [
-        {"item": "Aspirin", "quantity": "100 tablets", "price": "$5.99", "id": "1230000"},
         {"item": "Ibuprofen", "quantity": "50 tablets", "price": "$3.49", "id": "123000"},
         {"item": "Benadryl Allergy", "quantity": "24 tablets", "price": "$7.99", "id": "12347"},
         {"item": "Band-Aid assorted sizes", "quantity": "20 count", "price": "$2.99", "id": "1231111"},

@@ -12,13 +12,16 @@ const orderSchema = new Schema(
       type: String,
       required: true,
     },
-    phone: {
-      type: String,
-      required: true,
+    pnNumbers: {
+      type: [String],
+      required: false,
     },
     address: {
       type: String,
       required: true,
+    },
+    comments: {
+      type: String,
     },
     totalPrice: {
       type: Number,
@@ -61,16 +64,18 @@ const validateBodyOrder = Joi.object({
   email: Joi.string()
     .required()
     .messages({ "any.required": "missing required email field" }),
-  phone: Joi.string()
+  pnNumbers: Joi.array()
     .required()
     .messages({ "any.required": "missing required phone field" }),
   address: Joi.string()
     .required()
     .messages({ "any.required": "missing required address field" }),
+  comments: Joi.string(),
   totalPrice: Joi.number()
     .required()
     .messages({ "any.required": "missing required totalPrice field" }),
   medicines: Joi.array()
+    .required()
     .items(
       Joi.object({
         _id: Joi.string().required(),
