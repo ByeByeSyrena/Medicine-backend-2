@@ -44,6 +44,9 @@ const {
 const {
   currentPharmacy,
 } = require("./updatedControllers/pharmacyControllers/currentPharmacy");
+const {
+  logoutPharmacy,
+} = require("./updatedControllers/pharmacyControllers/logoutPharmacy");
 
 const { loginUser } = require("./updatedControllers/userControllers/loginUser");
 const {
@@ -61,6 +64,9 @@ const {
 const {
   currentUser,
 } = require("./updatedControllers/userControllers/currentUser");
+const {
+  logoutUser,
+} = require("./updatedControllers/userControllers/logoutUser");
 
 module.exports = {
   createOrder,
@@ -84,4 +90,6 @@ module.exports = {
   addFavorite,
   currentPharmacy,
   currentUser,
+  logoutUser,
+  logoutPharmacy,
 };

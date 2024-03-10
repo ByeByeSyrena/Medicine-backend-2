@@ -8,6 +8,7 @@ const {
   updateUser,
   deleteUser,
   currentUser,
+  logoutUser,
 } = require("../controllers");
 const { validateFields, isValidId, checkUserToken } = require("../middlewares");
 const {
@@ -25,7 +26,7 @@ router.patch(
 );
 router.delete("/:id", isValidId, deleteUser);
 
-// router.post("/logout", checkToken, logoutUser);
+router.post("/logout", checkUserToken, logoutUser);
 
 router.get("/current", checkUserToken, currentUser);
 

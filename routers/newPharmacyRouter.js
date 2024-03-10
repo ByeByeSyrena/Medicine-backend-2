@@ -10,6 +10,7 @@ const {
   deletePharmacy,
   loginPharmacy,
   currentPharmacy,
+  logoutPharmacy,
 } = require("../controllers");
 const {
   validateFields,
@@ -43,5 +44,7 @@ router.patch(
 router.delete("/:id", isValidId, deletePharmacy);
 
 router.get("/current", checkPharmacyToken, currentPharmacy);
+
+router.post("/logout", checkPharmacyToken, logoutPharmacy);
 
 module.exports = router;
