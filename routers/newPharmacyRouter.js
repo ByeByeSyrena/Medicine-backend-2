@@ -5,7 +5,6 @@ const router = express.Router();
 const {
   createPharmacy,
   getPharmacies,
-  loginUser,
   updatePharmacy,
   deletePharmacy,
   loginPharmacy,
