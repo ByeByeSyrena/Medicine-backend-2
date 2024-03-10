@@ -2,10 +2,46 @@ const express = require("express");
 
 const router = express.Router();
 
-const { createPharmacy } = require("../controllers");
-const { validateFields } = require("../middlewares");
-const { createPharmacyDataValidator } = require("../validation");
+const {
+  createPharmacy,
+  getPharmacies,
+  loginUser,
+  updatePharmacy,
+  deletePharmacy,
+  loginPharmacy,
+  currentPharmacy,
+} = require("../controllers");
+const {
+  validateFields,
+  isValidId,
+  checkPharmacyToken,
+} = require("../middlewares");
+const {
+  createPharmacyDataValidator,
+  updatePharmacyDataValidator,
+} = require("../validation");
 
-router.post("/", validateFields(createPharmacyDataValidator), createPharmacy);
+router.get("/", getPharmacies);
+
+router.post(
+  "/register",
+  validateFields(createPharmacyDataValidator),
+  createPharmacy
+);
+router.post(
+  "/login",
+  validateFields(createPharmacyDataValidator),
+  loginPharmacy
+);
+router.patch(
+  "/:id",
+  isValidId,
+  validateFields(updatePharmacyDataValidator),
+  updatePharmacy
+);
+
+router.delete("/:id", isValidId, deletePharmacy);
+
+router.get("/current", checkPharmacyToken, currentPharmacy);
 
 module.exports = router;

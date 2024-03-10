@@ -1,6 +1,6 @@
 const bcrypt = require("bcrypt");
 
-const { ctrlWrapper } = require("../../../helpers");
+const { ctrlWrapper, httpError } = require("../../../helpers");
 
 const { newPharmacy } = require("../../../models");
 

@@ -5,6 +5,7 @@ const {
 } = require("./orderModel");
 const { User } = require("./userModel");
 const { newPharmacy } = require("./pharmacyModel");
+const { newMedicine } = require("./medicineModel");
 
 module.exports = {
   pharmacySchemas,
@@ -14,4 +15,5 @@ module.exports = {
   Order,
   User,
   newPharmacy,
+  newMedicine,
 };

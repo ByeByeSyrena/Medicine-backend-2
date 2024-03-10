@@ -9,6 +9,8 @@ const {
   createUserDataValidator,
 } = require("./userValidation");
 
+const { validateNewMedicine } = require("./medicineValidation");
+
 const { validateBodyOrder } = require("./orderValidation");
 
 module.exports = {
@@ -18,4 +20,5 @@ module.exports = {
   validateBodyOrder,
   updateUserDataValidator,
   createUserDataValidator,
+  validateNewMedicine,
 };

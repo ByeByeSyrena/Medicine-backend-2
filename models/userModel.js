@@ -20,6 +20,16 @@ const userSchema = new Schema(
       enum: Object.values(userRolesEnum),
       default: userRolesEnum.USER,
     },
+    favorites: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "newMedicine",
+      },
+    ],
+    seller: {
+      type: Schema.Types.ObjectId,
+      ref: "newPharmacy",
+    },
   },
   { versionKey: false, timestamps: true }
 );

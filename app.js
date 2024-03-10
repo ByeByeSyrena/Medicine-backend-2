@@ -12,6 +12,7 @@ const {
   ordersRouter,
   usersRouter,
   newPharmacyRouter,
+  medicineRouter,
 } = require("./routers");
 const { configs } = require("./configs");
 const { URL_PREFIX } = require("./constants");
@@ -29,6 +30,7 @@ app.use(`${URL_PREFIX}/pharmacies`, pharmaciesRouter);
 app.use(`${URL_PREFIX}/orders`, ordersRouter);
 app.use(`${URL_PREFIX}/users`, usersRouter);
 app.use(`${URL_PREFIX}/newpharmacies`, newPharmacyRouter);
+app.use(`${URL_PREFIX}/medicines`, medicineRouter);
 
 app.use((req, res) => {
   res.status(404).json({ message: "Not found" });
