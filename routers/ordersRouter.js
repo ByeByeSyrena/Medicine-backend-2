@@ -4,8 +4,8 @@ const router = express.Router();
 
 const { createOrder } = require("../controllers");
 const { validateFields } = require("../middlewares");
-const { schemas } = require("../models");
+const { validateBodyOrder } = require("../validation");
 
-router.post("/", validateFields(schemas.validateBodyOrder), createOrder);
+router.post("/", validateFields(validateBodyOrder), createOrder);
 
 module.exports = router;
