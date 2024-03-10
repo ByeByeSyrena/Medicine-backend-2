@@ -13,17 +13,22 @@ const {
   usersRouter,
   newPharmacyRouter,
 } = require("./routers");
+const { configs } = require("./configs");
+const { URL_PREFIX } = require("./constants");
+const { environment } = configs;
 
-const formatsLogger = app.get("env") === "development" ? "dev" : "short";
+const formatsLogger = process.env.NODE_ENV === "development" ? "dev" : "short";
 
-app.use(logger(formatsLogger));
+if (environment === "development") {
+  app.use(logger(formatsLogger));
+}
 app.use(cors());
 app.use(express.json());
 
-app.use("/pharmacies", pharmaciesRouter);
-app.use("/orders", ordersRouter);
-app.use("/users", usersRouter);
-app.use("/newpharmacies", newPharmacyRouter);
+app.use(`${URL_PREFIX}/pharmacies`, pharmaciesRouter);
+app.use(`${URL_PREFIX}/orders`, ordersRouter);
+app.use(`${URL_PREFIX}/users`, usersRouter);
+app.use(`${URL_PREFIX}/newpharmacies`, newPharmacyRouter);
 
 app.use((req, res) => {
   res.status(404).json({ message: "Not found" });
